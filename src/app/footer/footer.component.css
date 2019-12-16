@@ -1,0 +1,12 @@
+li.nav-item a.nav-link {
+    color: white;
+}
+
+a.nav-link.active-route {
+    color: white;
+    font-weight: bold;
+}
+
+a.navbar-brand{
+    color:white;
+}
