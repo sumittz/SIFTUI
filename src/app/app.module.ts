@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { MarketComponent } from './market/market.component';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
     AboutComponent,
     MarketComponent,
     RecommendationComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
