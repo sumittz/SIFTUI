@@ -11,6 +11,7 @@ import { MarketComponent } from './market/market.component';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { ContactComponent } from './contact/contact.component';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass : HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
