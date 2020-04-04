@@ -12,6 +12,8 @@ import { RecommendationComponent } from './recommendation/recommendation.compone
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { ContactComponent } from './contact/contact.component';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { StockleaderComponent } from './stockleader/stockleader.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
     MarketComponent,
     RecommendationComponent,
     SubscribeComponent,
-    ContactComponent
+    ContactComponent,
+    StockleaderComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [{provide: LocationStrategy, useClass : HashLocationStrategy}],

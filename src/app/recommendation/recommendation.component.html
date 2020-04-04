@@ -1,3 +1,31 @@
-<div class ="container">
-<img src="assets/img/Under_Construction2.PNG" alt="SIFT Market" style="width:800px;height:600px;">
+<br>
+
+<div class="container">
+<h3 > Stock Leader Board</h3>
+<hr/>
 </div>
+
+<table class="table table-condensed table-hover table-stripped table-bordered">
+    <tbody>
+
+        <tr class="ui-grid-top-panel">
+            <th> Sift Rank</th>
+            <th> Name</th>
+            <th> Price</th>
+            <th> P/E</th>
+            <th> Market Cap (Rs. Cr.)</th>
+            <th> Div Yield %</th>
+            <th> ROE %</th>
+        </tr>
+
+        <tr class="stripe" *ngFor="let stockLeader of stockLeaderList">
+            <td>{{stockLeader.siftRank}}</td>
+            <td>{{stockLeader.name}}</td>
+            <td>{{stockLeader.price}}</td>
+            <td>{{stockLeader.peRatio}}</td>
+            <td>{{stockLeader.marketCap}}</td>
+            <td>{{stockLeader.divYield}}</td>
+            <td>{{stockLeader.roe}}</td>
+        </tr> 
+    </tbody>
+</table>
